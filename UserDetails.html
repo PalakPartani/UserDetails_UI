@@ -17,9 +17,21 @@
                 <div>
                     <button class="adminButton" type="button">Admin</button>
                 </div>
+                <div style="right: 0;position: absolute;">
+                    <div id="menuButton" onclick="menuOption()">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path fill="none"
+                                d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+								s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
             </div>
 
-            <div class="verticalMenu">
+            <div class="verticalMenu" id="verticalMenu">
 
                 <div class="item active"><svg class="svg-icon" viewBox="0 0 20 20">
                         <path
@@ -58,8 +70,9 @@
 
             <form action="index.html">
                 <div class="ask">
-                    <div style="width: 80%;">
+                    <div style="width: 80%">
                         <input type="text" placeholder="What do you want to ask?" name="Search">
+
                     </div>
                     <!--button icon-->
                     <div style="width: 10%;text-align: center;padding: 10px;">
@@ -69,12 +82,9 @@
                     <div class="askButton">
                         <input type="button" name="ask" value="ask" style="padding: 10px;width: 100%;">
                     </div>
+
                 </div>
             </form>
-
-            <!-- <form action="index.html">
-                <input type="text" placeholder="What do you want to ask?" name="Search">
-            </form> -->
             <div style="display: flex">
                 <div style="width: 80%;">
                     <h1>User (<a id="count"></a>)</h1>
@@ -97,28 +107,5 @@
 </body>
 
 <script src="operation.js"></script>
-<!-- <script>
-    var users = [{ name: "Palak", Email: "ppartani@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-    { name: "Palak", Email: "ppartani@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-    { name: "Palak", Email: "ppartani@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-    { name: "Palak", Email: "ppartani@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" }];
-    var text = "";
-    var i;
-    text += "<table>";
-    text += "<tr><th> Name</th><th>Email</th> <th>Status</th><th>Role</th><th>Last Login</th><th>Permission</th> </tr > ";
-    for (i = 0; i < users.length; i++) {
-        text += "<tr><td>" + users[i].name + "</td><td>" + users[i].Email + "</td><td><form><input class='statusButton' button type='submit' name='active' value='Active' id='btn' onclick= ' changeStatus()>' ></form></td><td>" + users[i].Type + "</td><td>" + users[i].LastSeen + "</td><td>" + users[i].Permission + "</td></tr>";
-    }
-    text += "</table>";
-    document.getElementById("table").innerHTML = text;
-    document.getElementById("count").innerHTML = users.length;
-
-    function changeStatus() {
-        var s = document.getElementById('btn').innerHTML = 'invalid';
-        // return s;
-        // if (status.value == "Active") status.value = "Inactive";
-        // else elem.value = "Inactive";
-    }
-</script> -->
 
 </html>
