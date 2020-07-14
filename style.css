@@ -1,7 +1,7 @@
 body{
     height:100%;
     width: auto;
-    background-color: aliceblue;
+    background-color:whitesmoke;
     font-family: arial;
     /* overflow: hidden; */
 }
@@ -27,9 +27,28 @@ body{
 }
 .titletext{
     color: white;
-    font-size: 30px;
+    font-size: 22px;
     display: flex;
+    margin-top: 40%;
+    /* color: white;
+    font-size: 30px;
+    display: flex; */
 }
+.svg-icon {
+    width: 1em;
+    height: 1em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #e8eff8;
+  }
+  
+  .svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+  }
 
 .svg-icon {
     width: 1em;
@@ -75,7 +94,7 @@ body{
   }
   
   .svg-icon circle {
-    stroke: #4691f6;
+    stroke: #ccc;
     stroke-width: 1;
   }
 
@@ -87,16 +106,27 @@ body{
   .svg-icon path,
   .svg-icon polygon,
   .svg-icon rect {
-    fill: #4691f6;
+    fill: #b6bfca;
   }
   
   .svg-icon circle {
-    stroke: #4691f6;
+    stroke: #cdd2d8;
     stroke-width: 1;
   }
 
 .adminButton{
-        background-color: blueviolet;
+    background-color: blueviolet;
+    flex: auto;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 1px;
+        /* background-color: blueviolet;
         flex:auto;
         border: none;
         color: white;
@@ -107,11 +137,11 @@ body{
         margin: 4px 2px;
         cursor: pointer;
         margin-top: 20px;
-        border-radius: 10px;
+        border-radius: 10px; */
 }
 .askButton{
     width: 10%;
-    padding: 10px;
+    padding: 8px;
 }
 
 .addUSerButton{
@@ -144,10 +174,10 @@ body{
 
 .item{
     color: #cac4c4;
-    padding: 20px 15px;
+    padding: 15px 15px;
 }
 .item:hover {
-    background-color: #ccc;
+    background-color: rgb(179, 175, 175);
     color: black;
   }
  .active {
@@ -189,19 +219,27 @@ table{
 
 }
 td{
-    padding: 5px 20px;
-    border: 1px solid silver;   
+    padding: 2px 15px;
+    border: none;  
 }
 th{
     padding: 15px 20px;  
+    font-family: 'Times New Roman', Times, serif
+}
+
+tr{
+    border: 1px solid silver; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+
 }
 
 .statusButton{
     border: 1px solid blue;
     background-color: white;
     color: blue;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .showName{
@@ -256,8 +294,15 @@ th{
         padding: 5px;
     } 
     /* .ask{
-        width: 100%;
-        display:flex;
-        flex-wrap: nowrap;
+        width: auto;
+        display:inline-block;
+        flex-wrap: wrap;
     }   */
+    .askButton{
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: 1px;
+    padding: 2px;
+    }
 }
