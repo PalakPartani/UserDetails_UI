@@ -8,14 +8,6 @@ var users = [{ Id: 0, Name: "Palak Partani", Email: "ppartani@gmail.com", Status
 { Id: 5, Name: "Puji Partani", Email: "puji@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
 { Id: 6, Name: "Pallavi Partani", Email: "plvi@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
 { Id: 7, Name: "Shri Partani", Email: "shri@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-{ Id: 8, Name: "Puji Partani", Email: "puji@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-{ Id: 9, Name: "Pallavi Partani", Email: "plvi@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-{ Id: 10, Name: "Shri Partani", Email: "shri@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-{ Id: 11, Name: "Puji Partani", Email: "puji@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-{ Id: 12, Name: "Pallavi Partani", Email: "plvi@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-{ Id: 13, Name: "Shri Partani", Email: "shri@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-{ Id: 14, Name: "Puji Partani", Email: "puji@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
-{ Id: 15, Name: "Pallavi Partani", Email: "plvi@gmail.com", Status: "Active", Type: "User", LastSeen: "2d Ago", Permission: "Valid" },
 ];
 
 var text = "";
@@ -23,7 +15,7 @@ var i;
 
 text += "<table>";
 
-text += "<tr><th> Name</th><th>Email</th> <th>Status</th><th>Type</th><th>Last Login</th><th>Permission</th><th></th></tr> ";
+text += "<tr><th>Name</th><th>Email</th><th>Status</th><th>Type</th><th>Last Login</th><th>Permission</th><th></th></tr> ";
 
 for (i = 0; i < users.length; i++) {
 
