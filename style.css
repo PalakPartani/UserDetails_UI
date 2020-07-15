@@ -1,18 +1,18 @@
 body{
     height:100%;
-    width: auto;
-    background-color:whitesmoke;
+    
+    background-color:aliceblue;
     font-family: arial;
     /* overflow: hidden; */
 }
 .totalDiv{
     display: flex;
     height: 100%;
-    margin: -10px;
+    margin: -10px;  
 }
 .sidebarDiv {
     height: auto;
-    background-color: black;
+    background-color: rgb(27, 26, 26);
     cursor: pointer;
     width:auto;
     border-right: 3px solid black;
@@ -46,7 +46,7 @@ body{
   }
   
   .svg-icon circle {
-    stroke: #4691f6;
+    stroke: #000914;
     stroke-width: 1;
   }
 
@@ -58,11 +58,11 @@ body{
   .svg-icon path,
   .svg-icon polygon,
   .svg-icon rect {
-    fill: #4691f6;
+    fill: #000000;
   }
   
   .svg-icon circle {
-    stroke: #4691f6;
+    stroke: white;
     stroke-width: 1;
   }
 
@@ -74,11 +74,11 @@ body{
   .svg-icon path,
   .svg-icon polygon,
   .svg-icon rect {
-    fill: #4691f6;
+    fill: #000000;
   }
   
   .svg-icon circle {
-    stroke: #4691f6;
+    stroke: #000000;
     stroke-width: 1;
   }
 
@@ -90,7 +90,7 @@ body{
   .svg-icon path,
   .svg-icon polygon,
   .svg-icon rect {
-    fill: #4691f6;
+    fill: #000000;
   }
   
   .svg-icon circle {
@@ -126,29 +126,23 @@ body{
     cursor: pointer;
     margin-top: 30px;
     border-radius: 1px;
-        /* background-color: blueviolet;
-        flex:auto;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-
-        font-size: 12px;
-        margin: 4px 2px;
-        cursor: pointer;
-        margin-top: 20px;
-        border-radius: 10px; */
+     
 }
 .askButton{
-    width: 10%;
-    padding: 8px;
+    width: 20%;
+    padding: 10px;
+}
+.askInput{
+    width: 80%;
+  
 }
 
 .addUSerButton{
     padding: 20px;
     text-align:end;
-    margin-top: 20px;
-    font-weight: 50;
+    margin-top: -10px;
+    margin-right: -75%;
+    /* font-weight: 40%; */
 }
 
 .button{
@@ -164,33 +158,56 @@ body{
     cursor: pointer;
 }
 .verticalMenu{  
-    margin : 25px 0px;
+    margin : 5px 0px;
     width: 100%;
+    font-size: 12px;
     
 }
 #verticalMenu{
     display: block;
+    position: relative;
 }
 
 .item{
     color: #cac4c4;
-    padding: 15px 15px;
+    padding: 25px 15px;
+}
+.itemmain{
+  color: #cac4c4;
+  padding: 2px;
+}
+.item1{
+  background-color: rgb(130, 131, 139)!important;
+  padding: 20px;
 }
 .item:hover {
-    background-color: rgb(179, 175, 175);
-    color: black;
+  background-color: rgb(54, 56, 75);
+    /* background-color: rgb(74, 79, 97); */
+    color: white;
   }
  .active {
-    background-color: #555;
+  background-color: rgb(74, 79, 97);
+   
     color: white;
   }
 
 .divQuestion{
     float: right;
     box-sizing: border-box;
-    width: 80%;
+    width: 90%;
     height:auto;
-    padding: 10px;
+}
+.head{
+  background-color:whitesmoke(148, 44, 61);
+  height: 10%;
+  padding: 10px 30px;
+  box-shadow: 0px 0px 10px silver;
+}
+.bodyy{
+  background-color:whitesmoke;
+  margin-top: 10px;
+  padding: 10px 30px;
+  box-shadow: 0px 0px 10px silver;
 }
 
 input[type=text], select {
@@ -200,23 +217,22 @@ input[type=text], select {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    
   }
 
   .ask{
     width:100%;
-    margin: 20px 0px;
+    margin: 10px 0px;
     display:flex;
     background-color: white;
     border: 1px solid silver;
+    box-shadow: rgb(54, 56, 75);
   }
 
 table{
     width: 100%;
     margin:50px 0px;
     border-collapse: collapse;
-
-
 }
 td{
     padding: 2px 15px;
@@ -224,12 +240,13 @@ td{
 }
 th{
     padding: 15px 20px;  
+    text-align: left;
     font-family: 'Times New Roman', Times, serif
 }
 
 tr{
     border: 1px solid silver; 
-    text-align: center;
+    /* //text-align: center; */
     font-family: 'Times New Roman', Times, serif
 
 }
@@ -249,20 +266,20 @@ tr{
     position: absolute;
 } 
 
-.findByFields{
+/* .findByFields{
     padding: 10px;
     margin:10px;
     border:1px solid silver;
     font-family: arial;
     font-weight: 100;
-}
+} */
 
 #menuButton{
     display: none;
 }
 
 
-@media only screen and (max-width:701px)
+@media only screen and (max-width:700px)
 {
     .totalDiv{
         display: block;
@@ -278,6 +295,8 @@ tr{
     }
     #verticalMenu{
         display: none;
+        position: absolute;
+        background-color: black;
     }
     #menuButton{
         display: block;
@@ -299,10 +318,10 @@ tr{
         flex-wrap: wrap;
     }   */
     .askButton{
-    width: auto;
-    height: auto;
-    margin-top: auto;
-    margin-bottom: 1px;
-    padding: 2px;
+        width: 40%;
+        padding: 10px;
+    }
+    .askInput{
+        width: 60%;
     }
 }
