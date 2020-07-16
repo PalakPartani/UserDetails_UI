@@ -19,7 +19,7 @@
                 </div>
                 <div style="right: 0;position: absolute;">
                     <div id="menuButton" onclick="menuOption()">
-                        <svg class="svg-icon" viewBox="0 0 20 20">
+                        <svg class="svg-icon-menu" style="width: 100px !important;" viewBox="0 0 20 20">
                             <path fill="none"
                                 d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
 								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
@@ -39,23 +39,22 @@
                             d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298">
                         </path>
                     </svg> -->
-                    <img src="img/pay-card.svg" width="13px"> Transaction
+                    <img src="img/pay-card.svg" width="15px" style="margin-bottom: -5px;"> &nbsp;&nbsp; Transaction
                 </div>
                 <div class="item">
-                    <img src="img/settingg.svg" width="13px"> System Settings
+                    <img src="img/settingg.svg" width="15px" style="margin-bottom: -5px;"> &nbsp;&nbsp; System Settings
                 </div>
 
                 <div class="item">
-                    <img src="img/question.svg" width="13"> suggested question
+                    <img src="img/question.svg" width="15px" style="margin-bottom: -5px;"> &nbsp;&nbsp; Suggested
+                    Question
                 </div>
-                <div class="itemmain active"><img src="img/password.svg" width="13"> Authorization
-
-                    <!-- <div class="item style=background-color:  background-color: rgb(54, 56, 75);">Users</div> -->
-                    <div class="item1 active"> Users</div>
-                    <!-- <div class="item style=background-color:  background-color: rgb(54, 56, 75);">Users</div> -->
-                    <div class="item active"> Group</div>
-                    <div class="item"> Permission</div>
+                <div class="itemmain">
+                    <img src="img/password.svg" width="15px" style="margin-bottom: -5px;"> &nbsp;&nbsp; Authorization
                 </div>
+                <div class="itemSub active"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users</div>
+                <div class="itemSub"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Group</div>
+                <div class="itemSub"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Permission</div>
             </div>
             <div class="showName">
                 <img src="img/user1.svg" width="13"> Palakk Partani
@@ -82,16 +81,16 @@
             <!--div 2-->
             <div class="bodyy">
                 <div style="display: flex; height: 10%; width:auto;justify-content: space-between;">
-                    <div style="width: 65%;">
+                    <div class="userTitleLeft">
                         <h2>User (<a id="count"></a>)</h2>
                     </div>
-                    <div>
+                    <div class="userTitleRight">
                         <div class="addUSerButton">
                             <button class="button" onclick="myFunction()"> + Add User</button></div>
                     </div>
                 </div>
-                <div
-                    style="display: flex; width:40%;background-color: white; height:6%;border: 1px solid silver;border-radius: 5px;">
+                <div class="small">
+                    <!-- style="display: flex; width:40%;background-color: white; height:6%;border: 1px solid silver;border-radius: 5px;"> -->
                     <div style="width: 90%;">
                         <form action="index.html">
 
